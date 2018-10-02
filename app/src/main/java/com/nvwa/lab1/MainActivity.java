@@ -19,10 +19,11 @@ public class MainActivity extends AppCompatActivity {
     public void changeColor(View view) {
         TextView textView = findViewById(R.id.newButton);
         Random rnd = new Random();
-        textView.setTextColor(Color.rgb(
+        textView.setBackgroundColor( Color.rgb(
                 rnd.nextInt() % 256,
                 rnd.nextInt() % 256,
                 rnd.nextInt() % 256));
+        textView.setTextSize( ( rnd.nextInt() % 10 ) + 15 );
 
     }
 }
