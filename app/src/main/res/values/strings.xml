@@ -10,4 +10,13 @@
     <string name="hard">I\'m hidden behind the keyboard!</string>
     <string name="heh">Push the submit button to do something cool!</string>
 
+    <string name="code11">Congratulations!</string>
+    <string name="food11">New highest score!</string>
+    <string name="code10">Hmm, data is only partially correct&#8230;</string>
+    <string name="food10">Please try again.</string>
+    <string name="code01">I need data!</string>
+    <string name="food01">Please type something!</string>
+    <string name="code00">There are no secrets here&#8230;</string>
+    <string name="food00">for real.. not a single one.</string>
+
 </resources>
