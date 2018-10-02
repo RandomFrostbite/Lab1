@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,44 +7,102 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/qq"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="153dp"
+        android:text="@string/txtline1" />
 
     <EditText
-        android:id="@+id/editTextView"
-        android:layout_width="match_parent"
+        android:id="@+id/code"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_weight="1"
-        app:layout_constraintBottom_toTopOf="@+id/newButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="LabelFor" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:focusableInTouchMode="true"
+        android:hint="@string/code"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/food"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code"
+        android:layout_alignStart="@+id/code"
+        android:layout_alignEnd="@+id/code"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:focusableInTouchMode="true"
+        android:hint="@string/food"
+        android:singleLine="true" />
 
     <Button
-        android:id="@+id/newButton"
-        android:layout_width="380dp"
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
         android:layout_height="47dp"
+        android:layout_alignBottom="@+id/hard"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="300dp"
-        android:layout_weight="1"
-        android:onClick="changeColor"
-        android:text="@string/btnName"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginBottom="50dp"
+        android:onClick="submit"
+        android:text="@string/submit" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtline1"
+        android:layout_alignStart="@+id/txtline1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/txtline2" />
+
+    <TextView
+        android:id="@+id/txtline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtline2"
+        android:layout_alignStart="@+id/txtline2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/txtline3" />
+
+    <Button
+        android:id="@+id/pushme"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtline1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="60dp"
+        android:layout_toEndOf="@+id/txtline2"
+        android:onClick="changeColor"
+        android:text="@string/pushme" />
+
+    <TextView
+        android:id="@+id/hard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/hard" />
+
+    <TextView
+        android:id="@+id/heh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pushme"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/heh" />
+
+</RelativeLayout>

@@ -17,13 +17,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeColor(View view) {
-        TextView textView = findViewById(R.id.newButton);
+        TextView textView = findViewById(R.id.pushme);
         Random rnd = new Random();
         textView.setBackgroundColor( Color.rgb(
                 rnd.nextInt() % 256,
                 rnd.nextInt() % 256,
                 rnd.nextInt() % 256));
-        textView.setTextSize( ( rnd.nextInt() % 10 ) + 15 );
+        textView.setTextSize( ( rnd.nextInt() % 10 ) + 10 );
 
+    }
+
+    public void submit(View view) {
+        //task 3
     }
 }

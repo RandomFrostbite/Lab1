@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">Lab1</string>
-    <string name="qq">Hello, World!</string>
-    <string name="btnName">Push Me</string>
+    <string name="txtline1">Hello, World!</string>
+    <string name="txtline2">The answer is 42.</string>
+    <string name="txtline3">Cake is a lie!</string>
+    <string name="submit">Submit</string>
+    <string name="code">Please enter a code</string>
+    <string name="food">Please enter a food name</string>
+    <string name="pushme">Push me</string>
+    <string name="hard">I\'m hidden behind the keyboard!</string>
+    <string name="heh">Push the submit button to do something cool!</string>
+
 </resources>
